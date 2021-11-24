@@ -14,8 +14,8 @@ window.addEventListener('DOMContentLoaded', function() {
       // If we haven't selected 2 cards yet, add the current card to the
       // collection of selected cards and apply the correct CSS class.
       if (selectedCards.length < 2) {
-        selectedCards.push(card);
         card.classList.add('is-selected');
+        selectedCards.push(card);
       }
 
       // If we have selected two cards, see if they match.
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', function() {
           card1.classList.add('is-matched');
           card2.classList.add('is-matched');
         }
-
+        debugger;
         // Regardless of whether or not the cards match, deselect them and reset
         // the collection of matched cards.
         card1.classList.remove('is-selected');
